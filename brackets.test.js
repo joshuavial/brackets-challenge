@@ -30,9 +30,5 @@ test('mismatched brackets to be false', () => {
 test('matching brackets to be true', () => {
   expect(brackets('{()[]}')).toBe(true)
   expect(brackets('{({})[{}]}')).toBe(true)
-  expect(brackets('{all({sdf})[dd{}]}')).toBe(true)
+  expect(brackets('{all({sdf})[dd]}')).toBe(true)
 })
-//"asdfsd"
-//"{(asds)[d]fds}"
-//"()"
-//"[]"
